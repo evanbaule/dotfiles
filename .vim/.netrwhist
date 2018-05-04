@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/evanbaule/Rice/chunkwm/src/common/config'
+let g:netrw_dirhist_2='/Users/evanbaule/.bash_sessions'
+let g:netrw_dirhist_3='/Users/evanbaule/.ssh'
+let g:netrw_dirhist_4='/Users/evanbaule/Code/school/cs350/.git'
+let g:netrw_dirhist_5='/Users/evanbaule/Code/web/angular/my-app'
+let g:netrw_dirhist_6='/Users/evanbaule/.vim'
+let g:netrw_dirhist_7='/Users/evanbaule/.vim/plugin'
