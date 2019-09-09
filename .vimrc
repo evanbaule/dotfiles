@@ -15,6 +15,11 @@ set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 set cursorline
 
+"
+set nobackup
+set noswapfile
+
+
 " set textwidth=120
 set t_Co=256
 syntax on  7
