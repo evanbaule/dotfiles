@@ -1,6 +1,9 @@
 export PS1="\[\033[38;5;214m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]->\[$(tput sgr0)\]\[\033[38;5;214m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;208m\]\\$\[$(tput sgr0)\]"
 
+
+alias g++='/usr/local/bin/g++-8'
 #alias ls='ls'			    # Preferred ‘ls’ implementation
+alias ldap='ssh ebaule1@remote.cs.binghamton.edu' # University provided remote server
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation

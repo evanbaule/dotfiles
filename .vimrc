@@ -2,6 +2,7 @@ execute pathogen#infect()
 autocmd vimenter * NERDTree
 
 colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 
 
 set enc=utf-8
@@ -17,7 +18,7 @@ set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 set cursorline
 
-set textwidth=120
+" set textwidth=120
 set t_Co=256
 syntax on  7
 "colorscheme industry
