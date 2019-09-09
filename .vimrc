@@ -1,10 +1,7 @@
 execute pathogen#infect()
 autocmd vimenter * NERDTree
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
-
-
+colorscheme slate
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
