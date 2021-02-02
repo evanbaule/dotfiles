@@ -1,34 +1,71 @@
-execute pathogen#infect()
-autocmd vimenter * NERDTree
+" Vundle Setup
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-colorscheme slate
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" lightline
+Plugin 'itchyny/lightline.vim'
+set noshowmode
+set laststatus=2
+
+" Autopairs
+Plugin 'jiangmiao/auto-pairs'
+
+" NerdTree
+Plugin 'preservim/nerdtree'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" EMB
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-
-set autoindent
-" use intelligent indentation for C
-set smartindent
-" configure tabwidth and insert spaces instead of tabs
-set tabstop=4        " tab width is 4 spaces
-set shiftwidth=4     " indent also with 4 spaces
-set expandtab        " expand tabs to spaces
-set cursorline
-
-"
 set nobackup
 set noswapfile
-
-
-" set textwidth=120
 set t_Co=256
-syntax on  7
-"colorscheme industry
-set number
-set showmatch
-" intelligent comments
-set comments=sl:/*,mb:\ *,elx:\ */
 
+syntax on
+colorscheme slate
+set mouse=a
+set noerrorbells
+set wildmenu
+
+set hlsearch
+set incsearch
+
+" Indenting
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=4
+set expandtab    
+
+" Hybrid Autonumber
+set number relativenumber
+set showmatch
+set cursorline
+
+" Binds
 imap ii <Esc>
 nnoremap ww <C-w>w
 nnoremap <S-f> :NERDTreeToggle<CR>
+
