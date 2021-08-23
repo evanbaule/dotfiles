@@ -69,3 +69,7 @@ imap ii <Esc>
 nnoremap ww <C-w>w
 nnoremap <S-f> :NERDTreeToggle<CR>
 
+" macos mojave mismatch fix
+" https://github.com/skwp/dotfiles/issues/802
+let $RUBYHOME=$HOME."/.rbenv/versions/2.5.1"
+set rubydll=$HOME/.rbenv/versions/2.5.1/lib/libruby.2.5.1.dylib
