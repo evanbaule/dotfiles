@@ -11,5 +11,6 @@ vim +PluginInstall +qall
 
 echo " -- establishing symlink --"
 ln -sf $PWD/.vimrc $HOME/.vimrc
+ln -sf $PWD/.bashrc $HOME/.bashrc
 
 echo " -- setup complete -- "
