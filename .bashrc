@@ -1,9 +1,9 @@
-export PS1="\[\033[38;5;214m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]->\[$(tput sgr0)\]\[\033[38;5;214m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;208m\]\\$\[$(tput sgr0)\]"
+PS1='\[\e[0;1;38;5;43m\]\u\[\e[0;38;5;43m\]@\[\e[0;1;38;5;43m\]\h\[\e[0m\]:\[\e[0;1;38;5;111m\]\W\[\e[0m\]-\[\e[0;38;5;134m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[0m\]$\[\e[0m\]'
 
 
 alias g++='/usr/local/bin/g++-8'
 #alias ls='ls'			    # Preferred ‘ls’ implementation
-alias ldap='ssh ebaule1@remote.cs.binghamton.edu' # University provided remote server
+
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
